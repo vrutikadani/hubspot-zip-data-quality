@@ -1,5 +1,7 @@
 # HubSpot ZIP Data Quality
 
+[![CI](https://github.com/vrutikadani/hubspot-zip-data-quality/actions/workflows/ci.yml/badge.svg)](https://github.com/vrutikadani/hubspot-zip-data-quality/actions/workflows/ci.yml) ![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+
 A HubSpot custom-code workflow action that fixes city and state using the ZIP code, on contacts, companies and deals. It runs every time someone types a ZIP, and in a one-time backfill that cleaned up years of messy address data.
 
 > **About this repo.** I built and run this in production across six workflows (autofill and backfill × contacts, companies, deals). Territory routing, owner assignment and the public provider map all depend on clean state data, so this sits under everything else. This is a clean-room version with a small synthetic ZIP table.
@@ -62,4 +64,4 @@ To deploy: create a workflow with a custom code action (Node 20), add the `HUBSP
 | `test/decide.test.js` | Every rule and every safety skip |
 
 ---
-Built by [Vrutik Adani](https://www.linkedin.com/in/vrutikadani) · GTM Systems & AI Engineering
+Built by [Vrutik Adani](https://www.linkedin.com/in/vrutikadani) · Technical Product Manager, GTM Systems & AI Engineering
